@@ -55,7 +55,7 @@ async def buscar(ctx, *, palabra):
 async def detalles(ctx, id_producto: int):
     try:# Supongamos que este es el resultado de la BD
         producto = database.buscarProductoPorId(id_producto)
-        precio, descuento = database.obtenerPrecioWeb(id_producto)
+        precio, descuento = 0,0#database.obtenerPrecioWeb(id_producto)
         embed = discord.Embed(
             title=producto['nombre'],
             url=producto['link'],  # Hacés clic en el título y te abre la web
