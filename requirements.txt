@@ -1,5 +1,4 @@
 discord.py
 selenium
 wikipedia
-sqlite3
-time
+
